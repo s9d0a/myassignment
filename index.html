@@ -23,7 +23,7 @@
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-        font-size:20pt;
+        font-size: 30pt;
         }
       </style>
     <script>
@@ -49,14 +49,14 @@
             <p style="font-family:NeoDunggeunmo;">이름:<input id="passwordBox" type="text"/><input type="button" value="OK" onclick="show_assignment();"></p>
             #크롤링하기-남은 과제 띄우기(과제 이름, 제출 기한, 과제하기 버튼)
             <script>
-                document.gettElementById("bhclass").style.display="none";
+                document.getElementById("bhclass").style.display="none";
                 var name=document.getElementById("passwordBox");
                 var nameEntered=password.value;
             </script>
         </div> 
         
         <div id=bhclass>
-            <div id=김한경>
+            <div id=김한경 style="font-family:NeoDunggeunmo;">
                 진로 보고서 제출
             </div>
         </div>
