@@ -29,7 +29,10 @@
     <script>
        function show_assignment(){
         document.getElementById(namEntered).style.display="block";
-    }
+       }
+       function init_assignment{
+        document.getElementById("bhclass").style.display="none";
+       }
     </script>
 </head>
 <body>
@@ -49,7 +52,7 @@
             <p style="font-family:NeoDunggeunmo;">이름:<input id="passwordBox" type="text"/><input type="button" value="OK" onclick="show_assignment();"></p>
             #크롤링하기-남은 과제 띄우기(과제 이름, 제출 기한, 과제하기 버튼)
             <script>
-                document.getElementById("bhclass").style.display="none";
+                init_assginment();
                 var name=document.getElementById("passwordBox");
                 var nameEntered=password.value;
             </script>
