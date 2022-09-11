@@ -27,15 +27,18 @@
         }
       </style>
       <script>
+        function init_page(){
+            bhstudent=['강혜인', '김새봄', '김성미', '김한경', '김한울', '도서우', '민가은', '박단비', '박빛나', '박수진', '박은빈', '박정아', '박채원', '박현지', '박효빈', '방채은', '석민채', '신재윤', '양예슬', '윤지수', '이상이', '이소연', '이유림', '이윤지', '이재희', '이지후', '장수빈', '정민용', '조혜선', '황하연', '김지윤'];
+            for (i=0;i<=30;i++){
+                document.getElementById(bhstudent[i]).style.display="none";
+            }
         function assignment(){
             var name=document.getElementById("namebox");
             var nameEntered=name.value;
             alert(nameEntered);
+            document.getElementById(nameEntered).style.display="block";
         }
-       function init_assignment(){
-        document.getElementById("bhclass").style.display="none";
-       }
-      </script>
+    </script>   
 </head>
 <body>
     <div class="left">
@@ -51,22 +54,104 @@
         <div>
             <img style="width:100%; height:10%;" src="https://user-images.githubusercontent.com/113124190/189411719-67cdc005-dad4-4c19-acc3-1da986b20273.PNG"/>
             <p style="font-family:NeoDunggeunmo;">남은 과제를 검색하려면 본인의 이름을 입력하세요</p>
-            <p style="font-family:NeoDunggeunmo;">이름:<input id="namebox" type="text"/><input type="button" value="OK" onclick="show_assignment();"/></p>
-            <script>
-                init_assignment();
-            </script>
-            
-         <div id="bhclass" style="font-family:NeoDunggeunmo;">
-            <div id="김한경">
-                아휴 이번엔 제발 좀 돼라 좀
-            </div>
-            <div id="박정아">
-                한국사 예습지 준비하기
-            </div>
-        </div>   
-        </div> 
-        
-        
-    </div> 
+            <p style="font-family:NeoDunggeunmo;">이름:<input id="namebox" type="text"/><input type="button" value="OK" onclick="assignment();"/></p>
+        </div>
+    </div>
+        <div id="강혜인" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="김새봄" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="김성미" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="김한경" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="김한울" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="도서우" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="민가은" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박단비" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박빛나" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박수진" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박은빈" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박정아" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박채원" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박현지" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="박효빈" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="방채은" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="석민채" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="신재윤" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="양예슬" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="윤지수" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이상이" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이소연" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이유림" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이윤지" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이재희" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="이지후" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="장수빈" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="정민용" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="조혜선" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="황하연" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <div id="김지윤" style="font-family:NeoDunggeunmo;">
+        <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
+    </div>
+    <script>
+        init_page();
+    </script>
 </body>
 </html>
