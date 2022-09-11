@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myAssignment</title>
+    <title>Document</title>
     <style>
+        .name{
+            background-color:maroon;
+            padding: 10px;
+            text-align:left;
+            font-size: 18pt;
+            color: white;
+            width: 100%;
+            height: 20%;
+        }
         div{
          width: 100%;
          height: 500px;
@@ -22,7 +31,7 @@
         div.down{
             float:right;
          }
-      </style>
+    </style>
     <style type="text/css">
         @font-face {
             font-family: 'NeoDunggeunmo';
@@ -32,11 +41,13 @@
             font-style: normal;
         }
     </style>
-      <script>
+    <script>
         function init_page(){
             bhstudent=['강혜인', '김새봄', '김성미', '김한경', '김한울', '도서우', '민가은', '박단비', '박빛나', '박수진', '박은빈', '박정아', '박채원', '박현지', '박효빈', '방채은', '석민채', '신재윤', '양예슬', '윤지수', '이상이', '이소연', '이유림', '이윤지', '이재희', '이지후', '장수빈', '정민용', '조혜선', '황하연', '김지윤'];
             for (i=0;i<=30;i++){
                 document.getElementById(bhstudent[i]).style.display="none";
+            }
+            
         }
         function assignment(){
             var name=document.getElementById("namebox");
@@ -60,11 +71,11 @@
     <div class="right">
         <div>
             <img style="width:100%; height:10%;" src="https://user-images.githubusercontent.com/113124190/189411719-67cdc005-dad4-4c19-acc3-1da986b20273.PNG"/>
-            <p style="font-family:NeoDunggeunmo;">남은 과제를 검색하려면 본인의 이름을 입력하세요</p>
+            <p style="font-family:NeoDunggeunmo;">과제 체크리스트를 확인하려면 본인의 이름을 입력하세요</p>
             <p style="font-family:NeoDunggeunmo;">이름:<input id="namebox" type="text"/><input type="button" value="OK" onclick="assignment();"/></p>
         </div>
     </div>
-    
+
     <div id="강혜인" style="font-family:NeoDunggeunmo;">
         <label><input name="asm" type="checkbox"> [진로]보고서 제출(허준이 교수 졸업축사 영상) </label><br/>
     </div>
@@ -161,5 +172,6 @@
     <script>
         init_page();
     </script>
+  
 </body>
 </html>
